@@ -12,6 +12,7 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="./scripts/skillComponent.js" defer></script>
 
     <title>Vinicius Mendes</title>
 </head>
@@ -28,10 +29,10 @@
             <nav class="navbar">
                 <div class="touch-close"></div>
                 <ul class="nav-links">
-                    <li class="link"><a href="about">Sobre</a></li>
-                    <li class="link"><a href="Skills">Skills</a></li>
-                    <li class="link"><a href="Projetos">Projetos</a></li>
-                    <li class="link"><a href="Contato">Contato</a></li>
+                    <li class="link"><a href="#about">Sobre</a></li>
+                    <li class="link"><a href="#skills">Skills</a></li>
+                    <li class="link"><a href="#projetos">Projetos</a></li>
+                    <li class="link"><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
             <div class="hamburguer" id="hamburguer">
@@ -53,14 +54,12 @@
         </section>
 
         <section id="about">
-            <!-- <div class="about"> -->
-            <h2 class="about">
+            <h2 class="section-title">
                 <div class="square">
                     <div class="square-intern"></div>
                 </div>
                 Sobre
             </h2>
-            <!-- </div> -->
             <div class="about-content">
                 <div class="author">
                     <img src="./assets/images/user.webp" class="user-image" alt="user image">
@@ -86,6 +85,39 @@
                     <p class="about-description">Atualmente, estou focado em me especializar no segmento de
                         Desenvolvimento Web com projetos que possam impactar. Tem algo em mente? Fique a vontade para me
                         contactar. :)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">
+                <div class="square">
+                    <div class="square-intern"></div>
+                </div>
+                Skills
+            </h2>
+            <div class="skills-container">
+                <my-skills text="html" source="./assets/images/skills/html.svg"></my-skills>
+                <my-skills text="css" source="./assets/images/skills/css.svg"></my-skills>
+                <my-skills text="javascript" source="./assets/images/skills/javascript.svg"></my-skills>
+                <my-skills text="typescript" source="./assets/images/skills/typescript.png"></my-skills>
+                <my-skills text="react" source="./assets/images/skills/react.png"></my-skills>
+                <my-skills text="postresql" source="./assets/images/skills/db.svg"></my-skills>
+                <my-skills text="mongodb" source="./assets/images/skills/mongodb.svg"></my-skills>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">
+                <div class="square">
+                    <div class="square-intern"></div>
+                </div>
+                Projetos
+            </h2>
+
+            <div class="projects-content">
+                <div class="project">
+                    <img src="" alt="">
                 </div>
             </div>
         </section>
