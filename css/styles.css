@@ -124,15 +124,10 @@ body {
     margin: 1em 0;
 }
 
-.btn-curriculo {
-    display: inline-block;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-    padding: 10px 60px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-family: 'Poppins-Regular';
+.top-links {
     margin-top: 30px;
+    max-width: 350px;
+    
 }
 
 .square {
@@ -288,6 +283,7 @@ body {
 
 .projects-content {
     padding: 50px 0;
+    /* display: flex; */
 }
 
 .project {
@@ -380,6 +376,12 @@ body {
     color: var(--text-secondary-color);
 }
 
+.access-links{
+    display: flex;
+    margin-top: 25%;
+    gap: 10px;
+}
+
 .btn-access {
     font-family: 'Poppins-Light';
     display: flex;
@@ -392,7 +394,6 @@ body {
     border-radius: 5px;
     color: var(--primary-color);
     font-size: 1.125rem;
-    margin-top: 25%;
 }
 
 .btn-access:hover {
