@@ -20,11 +20,10 @@ class SkillComponent extends HTMLElement {
             .skill{
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                flex: 1 0 21%;
                 gap: 10px;
+                align-items: center;
                 transition: all .2s;
-                margin: 20px 0;
+                margin: 20px auto;
             }
             .skill:hover{
                 transform: scale(1.2);
@@ -33,11 +32,12 @@ class SkillComponent extends HTMLElement {
             .skill-title{
                 font-family: 'Poppins-Medium';
                 text-transform: uppercase;
-                margin: 0
+                margin: 0;
             }
             
             .skill-image{
                 width: 50px;
+
             }
         `
 

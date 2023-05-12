@@ -31,8 +31,8 @@
                 <ul class="nav-links">
                     <li class="link"><a href="#about">Sobre</a></li>
                     <li class="link"><a href="#skills">Skills</a></li>
-                    <li class="link"><a href="#projetos">Projetos</a></li>
-                    <li class="link"><a href="#contato">Contato</a></li>
+                    <li class="link"><a href="#projects">Projetos</a></li>
+                    <li class="link"><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
             <div class="hamburguer" id="hamburguer">
@@ -62,17 +62,17 @@
             </h2>
             <div class="about-content">
                 <div class="author">
-                    <img src="./assets/images/user.webp" class="user-image" alt="user image">
+                    <img src="./assets/images/user.jpeg" class="user-image" alt="user image">
                     <h3 class="username">Vinicius Mendes</h3>
                     <div class="social">
                         <a href="#" class="icon-link">
-                            <img src="./assets/images/email.svg" alt="email icon" class="icon">
+                            <img src="./assets/images/mediaIcons/email.svg" alt="email icon" class="icon">
                         </a>
                         <a href="#" class="icon-link">
-                            <img src="./assets/images/github.svg" alt="github icon" class="icon">
+                            <img src="./assets/images/mediaIcons/github.svg" alt="github icon" class="icon">
                             </a>
                         <a href="#" class="icon-link">
-                            <img src="./assets/images/linkedin.svg" alt="linkedin icon" class="icon">
+                            <img src="./assets/images/mediaIcons/linkedin.svg" alt="linkedin icon" class="icon">
                         </a>
                     </div>
                 </div>
@@ -117,10 +117,57 @@
 
             <div class="projects-content">
                 <div class="project">
-                    <img src="" alt="">
+                    <img src="./assets/images/projects/agency.webp" alt="" class="project-image">
+                    <div class="project-text">
+                        <h4 class="project-title">Website - Agência Espacial</h4>
+                        <p class="project-description">Um website feito para uma agência de marketing, com um banner interativo.</p>
+                    </div>
+
+                    <div class="project-hover" onclick="redirectToProject()">
+                            <h4 class="project-title">Website - Agência Espacial</h4>
+                            <p class="project-desc-hover">Fui responsável por idealizar a interface e codificá-la</p>
+                            <div class="techs">
+                                <span class="tech">html</span>
+                                <span class="tech">css</span>
+                                <span class="tech">javascript</span>
+                            </div>
+                            <div><a href="#" class="btn-access">acessar</a></div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section id="contact">
+            <h2 class="section-title">
+                <div class="square">
+                    <div class="square-intern"></div>
+                </div>
+                Contato
+            </h2>
+            <p class="contact-desc">Sinta-se a vontade para entrar em contato comigo.</p>
+            <div class="contact-links">
+                <a href="https://github.com/Viniciushenrique07" target="_blank" class="contact-link">
+                    <img src="./assets/images/mediaIcons/github.svg" target="_blank" class="img-link" alt="github-icon">
+                    github.com/Viniciushenrique07
+                </a>
+                <a href="https://www.linkedin.com/in/vinicius-mendes07/" target="_blank" class="contact-link">
+                    <img src="./assets/images/mediaIcons/linkedin.svg" class="img-link" alt="linkedin-icon">
+                    linkedin.com/in/vinicius-mendes07
+                </a>
+            </div>
+            <div class="contact-links">
+                <a href="#" class="contact-link">
+                    <img src="./assets/images/mediaIcons/email.svg" target="_blank" class="img-link" alt="email-icon">
+                    vinicius.henrique.92@hotmail.com
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p class="footer-info">
+                © 2020 Iaan Mesquita - Design by <a href="https://github.com/lavininhamelo" target="_blank" class="footer-link">Lavínia Melo</a>
+            </p>
+        </footer>
     </main>
 </body>
 <script src="./scripts/index.js"></script>
