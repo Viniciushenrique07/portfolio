@@ -458,6 +458,7 @@ height: 100%;
         visibility: hidden;
         transition: .3s;
         background-color: rgba(27, 34, 44, 0.7);
+        z-index: 2;
     }
     
     .touch-close{
