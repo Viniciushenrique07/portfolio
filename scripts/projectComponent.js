@@ -8,7 +8,7 @@ class ProjectComponent extends HTMLElement {
         project.classList.add('project')
 
         const image = document.createElement('img')
-        image.src = './assets/images/projects/agency.webp'
+        image.src = this.getAttribute('image-url')
         image.classList.add('project-image')
         image.alt = `${this.getAttribute('title')} print`
 
@@ -16,50 +16,62 @@ class ProjectComponent extends HTMLElement {
         text.classList.add('project-text')
 
         const title = document.createElement('h4')
-        title.textContent = 'Website - Agência Espacial'
+        title.textContent = this.getAttribute('title')
         title.classList.add('project-title')
 
         const description = document.createElement('p')
-        description.textContent = 'Um website feito para uma agência de marketing, com um banner interativo.'
+        description.textContent = this.getAttribute('description')
         description.classList.add('project-description')
         
         const hover = document.createElement('div')
         hover.classList.add('project-hover')
 
         const titleHover = document.createElement('h4')
+        titleHover.textContent = this.getAttribute('title')
         titleHover.classList.add('project-title')
-        titleHover.textContent = 'Website - Agência Espacial'
 
         const descHover = document.createElement('p')
+        descHover.textContent = this.getAttribute('description-hover')
         descHover.classList.add('project-desc-hover')
-        descHover.textContent = 'Fui responsável por idealizar a interface e codificá-la'
 
         const techs = document.createElement('div')
         techs.classList.add('techs')
 
         const tech1 = document.createElement('span')
+        tech1.textContent = this.getAttribute('tech1')
         tech1.classList.add('tech')
-        tech1.textContent = 'html'
+
         const tech2 = document.createElement('span')
+        tech2.textContent = this.getAttribute('tech2')
         tech2.classList.add('tech')
-        tech2.textContent = 'css'
+
         const tech3 = document.createElement('span')
+        tech3.textContent = this.getAttribute('tech3')
         tech3.classList.add('tech')
-        tech3.textContent = 'javascript'
 
         const accessLinks = document.createElement('div')
         accessLinks.classList.add('access-links')
 
         const linkRepo = document.createElement('a')
-        linkRepo.classList.add('btn-access')
         linkRepo.textContent = 'repo'
+        linkRepo.classList.add('btn-access')
+        linkRepo.href = this.getAttribute('repo-url')
+        linkRepo.target = '_blank'
 
         const linkSite = document.createElement('a')
-        linkSite.classList.add('btn-access')
         linkSite.textContent = 'acessar'
+        linkSite.classList.add('btn-access')
+        linkSite.href = this.getAttribute('site-url')
+        linkSite.target = '_blank'
 
         const style = document.createElement('style')
         style.textContent = `
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
         .project {
             background-color: #2a3443;
             width: 350px;
@@ -110,6 +122,8 @@ class ProjectComponent extends HTMLElement {
             position: absolute;
             top: 50px;
             padding: 0 20px;
+            height: 100%;
+            width: 100%;
             background-color: #2a3443;
             border-radius: 10px;
             font-family: 'Poppins-Light';
@@ -166,6 +180,7 @@ class ProjectComponent extends HTMLElement {
             border-radius: 5px;
             color: var(--primary-color);
             font-size: 1.125rem;
+            transition: .2s;
         }
         
         .btn-access:hover {
@@ -194,8 +209,6 @@ class ProjectComponent extends HTMLElement {
         
         project.appendChild(hover)
         shadow.appendChild(project)
-        console.log(this)
-        this.style.backgroundColor = '#fff'
     }
 }
 

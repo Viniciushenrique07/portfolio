@@ -283,7 +283,8 @@ body {
 
 .projects-content {
     padding: 50px 0;
-    /* display: flex; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project {
