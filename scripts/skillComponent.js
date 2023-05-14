@@ -1,14 +1,14 @@
 class SkillComponent extends HTMLElement {
-    constructor(){
+    constructor() {
         super()
 
-        const shadow = this.attachShadow({mode: 'closed'})
+        const shadow = this.attachShadow({ mode: 'closed' })
         const skill = document.createElement('div')
         skill.setAttribute('class', 'skill')
 
         const skillTitle = document.createElement('p')
         skillTitle.setAttribute('class', 'skill-title')
-        skillTitle.innerText =  this.getAttribute('text')
+        skillTitle.innerText = this.getAttribute('text')
 
         const skillImage = document.createElement('img')
         skillImage.setAttribute('class', 'skill-image')

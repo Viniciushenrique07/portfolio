@@ -1,11 +1,12 @@
 class ProjectComponent extends HTMLElement {
-    constructor(){
+    constructor() {
         super()
 
-        const shadow = this.attachShadow({mode: 'closed'})
+        const shadow = this.attachShadow({ mode: 'closed' })
 
         const project = document.createElement('div')
         project.classList.add('project')
+        project.addEventListener('click', () => window.open(`${this.getAttribute('site-url')}`, '_blank'))
 
         const image = document.createElement('img')
         image.src = this.getAttribute('image-url')
@@ -22,7 +23,7 @@ class ProjectComponent extends HTMLElement {
         const description = document.createElement('p')
         description.textContent = this.getAttribute('description')
         description.classList.add('project-description')
-        
+
         const hover = document.createElement('div')
         hover.classList.add('project-hover')
 
@@ -57,12 +58,14 @@ class ProjectComponent extends HTMLElement {
         linkRepo.classList.add('btn-access')
         linkRepo.href = this.getAttribute('repo-url')
         linkRepo.target = '_blank'
+        linkRepo.addEventListener('click', () => window.open(`${this.getAttribute('repo-url')}`, '_blank'))
 
         const linkSite = document.createElement('a')
         linkSite.textContent = 'acessar'
         linkSite.classList.add('btn-access')
         linkSite.href = this.getAttribute('site-url')
         linkSite.target = '_blank'
+        linkSite.addEventListener('click', () => window.open(`${this.getAttribute('site-url')}`, '_blank'))
 
         const style = document.createElement('style')
         style.textContent = `
@@ -202,11 +205,11 @@ class ProjectComponent extends HTMLElement {
         techs.appendChild(tech1)
         techs.appendChild(tech2)
         techs.appendChild(tech3)
-        
+
         hover.appendChild(accessLinks)
         accessLinks.appendChild(linkRepo)
         accessLinks.appendChild(linkSite)
-        
+
         project.appendChild(hover)
         shadow.appendChild(project)
     }
