@@ -6,7 +6,6 @@ class ProjectComponent extends HTMLElement {
 
         const project = document.createElement('div')
         project.classList.add('project')
-        project.addEventListener('click', () => window.open(`${this.getAttribute('site-url')}`, '_blank'))
 
         const image = document.createElement('img')
         image.src = this.getAttribute('image-url')
@@ -58,14 +57,12 @@ class ProjectComponent extends HTMLElement {
         linkRepo.classList.add('btn-access')
         linkRepo.href = this.getAttribute('repo-url')
         linkRepo.target = '_blank'
-        linkRepo.addEventListener('click', () => window.open(`${this.getAttribute('repo-url')}`, '_blank'))
 
         const linkSite = document.createElement('a')
         linkSite.textContent = 'acessar'
         linkSite.classList.add('btn-access')
         linkSite.href = this.getAttribute('site-url')
         linkSite.target = '_blank'
-        linkSite.addEventListener('click', () => window.open(`${this.getAttribute('site-url')}`, '_blank'))
 
         const style = document.createElement('style')
         style.textContent = `
@@ -130,7 +127,6 @@ class ProjectComponent extends HTMLElement {
             background-color: #2a3443;
             border-radius: 10px;
             font-family: 'Poppins-Light';
-            cursor: pointer;
             transition: .2s;
             opacity: 0;
             visibility: hidden;

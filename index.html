@@ -12,6 +12,8 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./scripts/skillComponent.js" defer></script>
     <script src="./scripts/projectComponent.js" defer></script>
@@ -44,24 +46,29 @@
         </header>
 
         <section id="top">
-            <div class="top-text">
+            <div class="top-text" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                 <h1 class="title">web developer</h1>
                 <h2 class="subtitle">Vinicius Mendes</h2>
                 <p class="description">Seja bem-vindo(a) a minha página pessoal. <br>
                     Aqui colocarei alguns projetos desenvolvidos e as tecnologias usadas durante o processo.</p>
                 <div class="social top-links">
-                    <a href="mailto:vinicius.henrique.92@hotmail.com" target="_blank" class="icon-link">
+                    <a href="mailto:vinicius.henrique.92@hotmail.com" target="_blank" class="icon-link"
+                        data-aos="fade-up" data-aos-duration="1000">
                         <img src="./assets/images/mediaIcons/email.svg" alt="email icon" class="icon">
                     </a>
-                    <a href="https://github.com/vinicius-mendes07" target="_blank" class="icon-link">
+                    <a href="https://github.com/vinicius-mendes07" target="_blank" class="icon-link" data-aos="fade-up"
+                        data-aos-duration="1500">
                         <img src="./assets/images/mediaIcons/github.svg" alt="github icon" class="icon">
-                        </a>
-                    <a href="https://www.linkedin.com/in/vinicius-mendes07/" target="_blank" class="icon-link">
+                    </a>
+                    <a href="https://www.linkedin.com/in/vinicius-mendes07/" target="_blank" class="icon-link"
+                        data-aos="fade-up" data-aos-duration="2000">
                         <img src="./assets/images/mediaIcons/linkedin.svg" alt="linkedin icon" class="icon">
                     </a>
                 </div>
             </div>
-            <div class="programmer-img"><img src="./assets/images/programmer.svg" alt="programmer image"></div>
+            <div class="programmer-img" data-aos="fade-left" data-aos-duration="1500">
+                <img src="./assets/images/programmer.svg" alt="programmer image">
+            </div>
         </section>
 
         <a href="#begin" class="arrow-up">
@@ -76,7 +83,7 @@
                 Sobre
             </h2>
             <div class="about-content">
-                <div class="author">
+                <div class="author" data-aos="fade-up-right" data-aos-duration="1000">
                     <img src="./assets/images/user.jpeg" class="user-image" alt="user image">
                     <h3 class="username">Vinicius Mendes</h3>
                     <div class="social">
@@ -85,17 +92,18 @@
                         </a>
                         <a href="https://github.com/vinicius-mendes07" target="_blank" class="icon-link">
                             <img src="./assets/images/mediaIcons/github.svg" alt="github icon" class="icon">
-                            </a>
+                        </a>
                         <a href="https://www.linkedin.com/in/vinicius-mendes07/" target="_blank" class="icon-link">
                             <img src="./assets/images/mediaIcons/linkedin.svg" alt="linkedin icon" class="icon">
                         </a>
                     </div>
                 </div>
 
-                <div class="about-text">
+                <div class="about-text" data-aos="fade-up-left" data-aos-duration="1000">
                     <h2 class="about-title">Conheça um pouco sobre mim</h2>
                     <p class="about-description">Olá, me chamo Vinicius Mendes tenho 21 anos e atualmente estou cursando
-                        Sistemas de Informação na Universidade Federal de Rondonópolis. Sempre gostei de entender como as
+                        Sistemas de Informação na Universidade Federal de Rondonópolis. Sempre gostei de entender como
+                        as
                         coisas funcionavam nos computadores e quis tornar disso minha profissão.</p>
                     <p class="about-description">Atualmente, estou focado em me especializar no segmento de
                         Desenvolvimento Web com projetos que possam impactar. Tem algo em mente? Fique a vontade para me
@@ -112,13 +120,20 @@
                 Skills
             </h2>
             <div class="skills-container">
-                <my-skills text="html" source="./assets/images/skills/html.svg"></my-skills>
-                <my-skills text="css" source="./assets/images/skills/css.svg"></my-skills>
-                <my-skills text="javascript" source="./assets/images/skills/javascript.svg"></my-skills>
-                <my-skills text="typescript" source="./assets/images/skills/typescript.png"></my-skills>
-                <my-skills text="react" source="./assets/images/skills/react.png"></my-skills>
-                <my-skills text="postresql" source="./assets/images/skills/db.svg"></my-skills>
-                <my-skills text="mongodb" source="./assets/images/skills/mongodb.svg"></my-skills>
+                <my-skills text="html" source="./assets/images/skills/html.svg" data-aos="flip-up"
+                    data-aos-duration="1000"></my-skills>
+                <my-skills text="css" source="./assets/images/skills/css.svg" data-aos="flip-right"
+                    data-aos-duration="1000"></my-skills>
+                <my-skills text="javascript" source="./assets/images/skills/javascript.svg" data-aos="flip-down"
+                    data-aos-duration="1000"></my-skills>
+                <my-skills text="typescript" source="./assets/images/skills/typescript.png" data-aos="flip-left"
+                    data-aos-duration="1000"></my-skills>
+                <my-skills text="react" source="./assets/images/skills/react.png" data-aos="flip-up"
+                    data-aos-duration="1000"></my-skills>
+                <my-skills text="postresql" source="./assets/images/skills/db.svg" data-aos="flip-right"
+                    data-aos-duration="1000"></my-skills>
+                <my-skills text="mongodb" source="./assets/images/skills/mongodb.svg" data-aos="flip-down"
+                    data-aos-duration="1000"></my-skills>
             </div>
         </section>
 
@@ -131,29 +146,7 @@
             </h2>
 
             <div class="projects-content">
-                <div class="project">
-                    <img src="./assets/images/projects/agency.webp" alt="" class="project-image">
-                    <div class="project-text">
-                        <h4 class="project-title">Website - Agência Espacial</h4>
-                        <p class="project-description">Um website feito para uma agência de marketing, com um banner interativo.</p>
-                    </div>
-
-                    <div class="project-hover" onclick="redirectToProject()">
-                            <h4 class="project-title">Website - Agência Espacial</h4>
-                            <p class="project-desc-hover">Fui responsável por idealizar a interface e codificá-la</p>
-                            <div class="techs">
-                                <span class="tech">html</span>
-                                <span class="tech">css</span>
-                                <span class="tech">javascript</span>
-                            </div>
-                            <div class="access-links">
-                                <a href="https://github.com/vinicius-mendes07/mschub-website" target="_blank" class="btn-access">Repo</a>
-                                <a href="#" target="_blank" class="btn-access">acessar</a>
-                            </div>
-                    </div>
-                </div>
-                <project-component
-                    site-url="https://vinicius-mendes07.github.io/mschub-website/"
+                <project-component site-url="https://vinicius-mendes07.github.io/mschub-website/"
                     image-url="./assets/images/projects/agency.webp"
                     title="Website - Agência Espacial"
                     description="Um website feito para uma agência de marketing, com um banner interativo."
@@ -162,9 +155,10 @@
                     tech2="css"
                     tech3="javascript"
                     repo-url="https://github.com/vinicius-mendes07/mschub-website"
-                ></project-component>
-                <project-component
-                    site-url="https://vinicius-mendes07.github.io/mschub-website/"
+                    data-aos="zoom-in-up" 
+                    data-aos-duration="1000"
+                    ></project-component>
+                <project-component site-url="https://vinicius-mendes07.github.io/mschub-website/"
                     image-url="./assets/images/projects/agency.webp"
                     title="Website - Agência Espacial"
                     description="Um website feito para uma agência de marketing, com um banner interativo."
@@ -173,9 +167,10 @@
                     tech2="css"
                     tech3="javascript"
                     repo-url="https://github.com/vinicius-mendes07/mschub-website"
-                ></project-component>
-                <project-component
-                    site-url="https://vinicius-mendes07.github.io/mschub-website/"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1000"
+                    ></project-component>
+                <project-component site-url="https://vinicius-mendes07.github.io/mschub-website/"
                     image-url="./assets/images/projects/agency.webp"
                     title="Website - Agência Espacial"
                     description="Um website feito para uma agência de marketing, com um banner interativo."
@@ -184,7 +179,9 @@
                     tech2="css"
                     tech3="javascript"
                     repo-url="https://github.com/vinicius-mendes07/mschub-website"
-                ></project-component>
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1000"
+                    ></project-component>
             </div>
         </section>
 
@@ -216,10 +213,18 @@
 
         <footer class="footer">
             <p class="footer-info">
-                Vinicius Mendes - Design by <a href="https://github.com/lavininhamelo" target="_blank" class="footer-link">Lavínia Melo</a>
+                Vinicius Mendes - Design by <a href="https://github.com/lavininhamelo" target="_blank"
+                    class="footer-link">Lavínia Melo</a>
             </p>
         </footer>
     </main>
 </body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 <script src="./scripts/index.js"></script>
+
 </html>
