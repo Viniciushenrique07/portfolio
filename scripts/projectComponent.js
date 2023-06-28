@@ -103,6 +103,7 @@ class ProjectComponent extends HTMLElement {
             display: block;
             width: 95%;
             margin: 0 auto;
+            border-radius: 10px;
         }
         
         .project-title {
