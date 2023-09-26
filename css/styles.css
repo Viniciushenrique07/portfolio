@@ -97,7 +97,7 @@ body {
     padding: 20px 10%;
     justify-content: space-between;
     align-items: center;
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
     margin-bottom: 100px;
 }
 
